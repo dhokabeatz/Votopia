@@ -1,0 +1,61 @@
+.
+├── account
+│   ├── admin.py
+│   ├── apps.py
+│   ├── email_backend.py
+│   ├── forms.py
+│   ├── __init__.py
+│   ├── middleware.py
+│   ├── migrations
+│   ├── models.py
+│   ├── __pycache__
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+├── db.sqlite3
+├── election_title.txt
+├── manage.py
+├── manager
+│   ├── admin.py
+│   ├── apps.py
+│   ├── __init__.py
+│   ├── migrations
+│   ├── models.py
+│   ├── __pycache__
+│   ├── template
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+├── media
+├── project_structure.txt
+├── README.md
+├── static
+│   ├── bower_components
+│   ├── css
+│   ├── dist
+│   ├── images
+│   ├── plugins
+│   └── toastr
+├── staticfiles
+│   └── admin
+├── voting
+│   ├── admin.py
+│   ├── apps.py
+│   ├── forms.py
+│   ├── __init__.py
+│   ├── migrations
+│   ├── models.py
+│   ├── __pycache__
+│   ├── template
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+└── votopia
+    ├── asgi.py
+    ├── __init__.py
+    ├── __pycache__
+    ├── settings.py
+    ├── urls.py
+    └── wsgi.py
+
+24 directories, 35 files
