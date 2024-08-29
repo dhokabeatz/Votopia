@@ -1,0 +1,59 @@
+{% extends "voting/base.html" %}
+{%load static%}
+
+
+
+{% block content%}
+<div class="bg-image " style="background-image:url('https://images.pexels.com/photos/7103110/pexels-photo-7103110.jpeg?auto=compress&cs=tinysrgb&w=600');
+height:100vh;background-repeat:no-repeat;background-size: cover;background-position: center; border-radius:4mpx;"
+>
+<nav class="navbar navbar-dark bg-dark shadow-sm">
+   
+</nav>
+    <div class="login-box" sytle="border-radius:8px;">
+        <div class="login-logo " style="font-weight:bolder;">
+      Welcome to BallotBox
+        </div>
+
+        <div class="login-box-body " sytle="border-radius:8px;">
+            <!-- <p class="login-box-msg">Sign in to start your session</p> -->
+
+            <form action="{% url 'account_login' %}" method="POST">
+                {% csrf_token %}
+                <div class="form-group has-feedback">
+                    <input type="text" class="form-control" name="email" placeholder="Email" required>
+                    <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                </div>
+                <div class="form-group has-feedback">
+                    <input type="password" class="form-control" name="password" placeholder="Password" required>
+                    <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                </div>
+                <div class="row mb-4">
+                    <div class="col d-flex justify-content-center">
+                      <!-- Checkbox -->
+                      <div class="form-check ">
+                        <input class="form-check-input" style="margin-left: 20px;"type="checkbox" value="" id="form2Example31" checked />
+                        <label class="form-check-label" for="form2Example31" style="font-weight:normal;"> Remember me </label>
+                      </div>
+                    </div>
+                    </div>
+                <div class="row">
+                    <div class="">
+                        <button type="submit" class="btn btn-primary btn-block mb-4" style="border-radius:4px;margin-left: 20px;margin-right: 40px;width:310px; " name="login"><i
+                                class="fa fa-sign-in"></i> Log In</button>
+                    </div> 
+                    <div class="text-center ">
+                        <p>Do Not Have An Account?</p>
+
+                    <div class="">
+                        <a  class="btn btn-success btn-block btn-block mb-4" style="border-radius:4px;margin-left: 20px;margin-right: 20px;width:310px;margin-bottom: 10px;" 
+                        href="{% url 'account_register' %}"><i class="fa fa-user-plus"></i> Register</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+            </div>
+            
+</div>
+ 
+{% endblock content %} 
