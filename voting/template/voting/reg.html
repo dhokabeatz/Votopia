@@ -1,0 +1,102 @@
+{% extends "voting/base.html" %}
+{% block content %}
+<div class="bg-image " style="background-image:url('https://images.pexels.com/photos/7103161/pexels-photo-7103161.jpeg?auto=compress&cs=tinysrgb&w=600');
+height:100vh;background-repeat:no-repeat;background-size: cover;background-position: center; border-radius:4mpx;"
+>
+<nav class="navbar navbar-dark bg-dark shadow-sm">
+
+</nav>
+    <div class="login-box">
+        <div class="login-logo">
+        </div>
+
+        <div class="login-box-body">
+            <!-- <p class="login-box-msg">Register an account</p> -->
+    <form action="{% url 'account_register' %}" method="POST">
+                {% csrf_token %}
+
+             
+                <div class="modal-body">
+                    {% for field in form1  %}
+                    <div class="form-group has-feedback">
+                        <span class="text-danger">{{field.errors}}</span>
+                        {{field.label_tag}}
+                        {{field}}
+                    </div>
+                    {% endfor %}
+
+                    {% for field in form2  %}
+                    <div class="form-group has-feedback">
+                        <span class="text-danger">{{field.errors}}</span>
+                        {{field.label_tag}}
+                        {{field}}
+                    </div>
+                    {% endfor %}
+
+
+               
+
+                    <div class="row">
+                        <div class="">
+                            <button type="submit" class="btn btn-primary btn-block btn-flat " style="border-radius:4px;margin-left: 20px;margin-right: 40px;width:290px;"
+                             name="login"><i
+                                    class="fa fa-user-plus"></i> Register</button>
+                        </div>
+                        <div class="">
+                            <a  class="btn btn-success btn-block btn-flat "style="border-radius:4px;margin-left: 20px;margin-right: 20px;width:290px;margin-top:10px;" 
+                             href="{% url 'account_login' %}"><i class="fa fa-sign-in"></i> Log In</a>
+                        </div>
+                    </div> 
+                </div>
+        </div>
+        </form>
+        </div>
+            </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="register" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form action="{% url 'account_register' %}" method="POST">
+                    {% csrf_token %}
+
+                    <div class="modal-header">
+                        <p class="modal-title" id="register">Create New Account <span class="float-right">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </span></p>
+                       
+                    </div>
+                    <div class="modal-body">
+                        {% for field in form1  %}
+                        <div class="form-group has-feedback">
+                            {{field.errors}}
+                            {{field.label_tag}}
+                            {{field}}
+                        </div>
+                        {% endfor %}
+
+                        {% for field in form2  %}
+                        <div class="form-group has-feedback">
+                            {{field.errors}}
+                            {{field.label_tag}}
+                            {{field}}
+                        </div>
+                        {% endfor %}
+
+
+                   
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="none" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        <button type="submit" name="reg"
+                            onclick="return confirm('Are you sure the details provided are correct?\nYou will NOT be allowed to make modifications.')"
+                            class="btn btn-success">Save</button>
+                    </div>
+            </div>
+            </form>
+        </div>
+    </div>
+{% endblock content %} 
