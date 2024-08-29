@@ -24,5 +24,5 @@ urlpatterns = [
     path('',include('account.urls')),
     path('account/', include('account.urls')),
     path('administrator/', include('manager.urls')),
-    # path('voting/',include('voting.urls')),
+    path('voting/',include('voting.urls')),
 ]
