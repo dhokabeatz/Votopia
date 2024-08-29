@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 # Create your views here.
 
-rom django.shortcuts import render, reverse, redirect
+from django.shortcuts import render, reverse, redirect
 from voting.models import Voter, Position, Candidate, Votes
 from account.models import CustomUser
 from account.forms import CustomUserForm
