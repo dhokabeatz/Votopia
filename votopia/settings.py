@@ -54,7 +54,7 @@ ROOT_URLCONF = 'votopia.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['voting/templates','admin/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -116,6 +116,24 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+
+MEDIA_URL = '/media'
+
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+
+STATIC_ROOT = [
+    os.path.join(BASE_DIR,'static')
+]
+
+AUTH_USER_MODEL = 'account.CustomUser'
+AUTHENTICATION_BACKEND = ['account.email_backend.EmailBackend']
+
+ELECTION_TITLE_PATH = os.path.join(
+    BASE_DIR, election_title.txt
+)
+
+
+SEND_OTP = False
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
