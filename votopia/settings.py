@@ -59,7 +59,7 @@ ROOT_URLCONF = 'votopia.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['voting/templates','admin/templates'],
+        'DIRS': ['voting/template','manager/template'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
