@@ -5,7 +5,12 @@
   
       --body-fg: #eeeeee;
       --body-bg: #121212;
+<<<<<<< HEAD
       --body-quiet-color: #e0e0e0;
+=======
+      --body-quiet-color: #d0d0d0;
+      --body-medium-color: #e0e0e0;
+>>>>>>> f4388bb34fac2e70e544336b3e06c7cf2a5af183
       --body-loud-color: #ffffff;
   
       --breadcrumbs-link-fg: #e0e0e0;
@@ -29,6 +34,11 @@
   
       --close-button-bg: #333333;
       --close-button-hover-bg: #666666;
+<<<<<<< HEAD
+=======
+
+      color-scheme: dark;
+>>>>>>> f4388bb34fac2e70e544336b3e06c7cf2a5af183
     }
   }
 
@@ -39,7 +49,12 @@ html[data-theme="dark"] {
 
     --body-fg: #eeeeee;
     --body-bg: #121212;
+<<<<<<< HEAD
     --body-quiet-color: #e0e0e0;
+=======
+    --body-quiet-color: #d0d0d0;
+    --body-medium-color: #e0e0e0;
+>>>>>>> f4388bb34fac2e70e544336b3e06c7cf2a5af183
     --body-loud-color: #ffffff;
 
     --breadcrumbs-link-fg: #e0e0e0;
@@ -63,6 +78,11 @@ html[data-theme="dark"] {
 
     --close-button-bg: #333333;
     --close-button-hover-bg: #666666;
+<<<<<<< HEAD
+=======
+
+    color-scheme: dark;
+>>>>>>> f4388bb34fac2e70e544336b3e06c7cf2a5af183
 }
 
 /* THEME SWITCH */

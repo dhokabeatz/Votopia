@@ -13,6 +13,10 @@ html[data-theme="light"],
     --body-fg: #333;
     --body-bg: #fff;
     --body-quiet-color: #666;
+<<<<<<< HEAD
+=======
+    --body-medium-color: #444;
+>>>>>>> f4388bb34fac2e70e544336b3e06c7cf2a5af183
     --body-loud-color: #000;
 
     --header-color: #ffc;
@@ -84,6 +88,11 @@ html[data-theme="light"],
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         "Noto Color Emoji";
+<<<<<<< HEAD
+=======
+
+    color-scheme: light;
+>>>>>>> f4388bb34fac2e70e544336b3e06c7cf2a5af183
 }
 
 html, body {
@@ -147,7 +156,10 @@ h1 {
     margin: 0 0 20px;
     font-weight: 300;
     font-size: 1.25rem;
+<<<<<<< HEAD
     color: var(--body-quiet-color);
+=======
+>>>>>>> f4388bb34fac2e70e544336b3e06c7cf2a5af183
 }
 
 h2 {
@@ -163,7 +175,11 @@ h2.subhead {
 h3 {
     font-size: 0.875rem;
     margin: .8em 0 .3em 0;
+<<<<<<< HEAD
     color: var(--body-quiet-color);
+=======
+    color: var(--body-medium-color);
+>>>>>>> f4388bb34fac2e70e544336b3e06c7cf2a5af183
     font-weight: bold;
 }
 
@@ -171,6 +187,10 @@ h4 {
     font-size: 0.75rem;
     margin: 1em 0 .8em 0;
     padding-bottom: 3px;
+<<<<<<< HEAD
+=======
+    color: var(--body-medium-color);
+>>>>>>> f4388bb34fac2e70e544336b3e06c7cf2a5af183
 }
 
 h5 {
@@ -217,6 +237,13 @@ fieldset {
     border-top: 1px solid var(--hairline-color);
 }
 
+<<<<<<< HEAD
+=======
+details summary {
+    cursor: pointer;
+}
+
+>>>>>>> f4388bb34fac2e70e544336b3e06c7cf2a5af183
 blockquote {
     font-size: 0.6875rem;
     color: #777;
@@ -313,7 +340,11 @@ td, th {
 }
 
 th {
+<<<<<<< HEAD
     font-weight: 600;
+=======
+    font-weight: 500;
+>>>>>>> f4388bb34fac2e70e544336b3e06c7cf2a5af183
     text-align: left;
 }
 
@@ -334,7 +365,11 @@ tfoot td {
 }
 
 thead th.required {
+<<<<<<< HEAD
     color: var(--body-loud-color);
+=======
+    font-weight: bold;
+>>>>>>> f4388bb34fac2e70e544336b3e06c7cf2a5af183
 }
 
 tr.alt {
@@ -482,8 +517,18 @@ textarea {
     vertical-align: top;
 }
 
+<<<<<<< HEAD
 input[type=text], input[type=password], input[type=email], input[type=url],
 input[type=number], input[type=tel], textarea, select, .vTextField {
+=======
+/*
+Minifiers remove the default (text) "type" attribute from "input" HTML tags.
+Add input:not([type]) to make the CSS stylesheet work the same.
+*/
+input:not([type]), input[type=text], input[type=password], input[type=email],
+input[type=url], input[type=number], input[type=tel], textarea, select,
+.vTextField {
+>>>>>>> f4388bb34fac2e70e544336b3e06c7cf2a5af183
     border: 1px solid var(--border-color);
     border-radius: 4px;
     padding: 5px 6px;
@@ -492,9 +537,19 @@ input[type=number], input[type=tel], textarea, select, .vTextField {
     background-color: var(--body-bg);
 }
 
+<<<<<<< HEAD
 input[type=text]:focus, input[type=password]:focus, input[type=email]:focus,
 input[type=url]:focus, input[type=number]:focus, input[type=tel]:focus,
 textarea:focus, select:focus, .vTextField:focus {
+=======
+/*
+Minifiers remove the default (text) "type" attribute from "input" HTML tags.
+Add input:not([type]) to make the CSS stylesheet work the same.
+*/
+input:not([type]):focus, input[type=text]:focus, input[type=password]:focus,
+input[type=email]:focus, input[type=url]:focus, input[type=number]:focus,
+input[type=tel]:focus, textarea:focus, select:focus, .vTextField:focus {
+>>>>>>> f4388bb34fac2e70e544336b3e06c7cf2a5af183
     border-color: var(--body-quiet-color);
 }
 
@@ -878,9 +933,16 @@ a.deletelink:focus, a.deletelink:hover {
     margin-right: -300px;
 }
 
+<<<<<<< HEAD
 #footer {
     clear: both;
     padding: 10px;
+=======
+@media (forced-colors: active) {
+  #content-related {
+      border: 1px solid;
+  }
+>>>>>>> f4388bb34fac2e70e544336b3e06c7cf2a5af183
 }
 
 /* COLUMN TYPES */
@@ -928,6 +990,15 @@ a.deletelink:focus, a.deletelink:hover {
     text-decoration: underline;
 }
 
+<<<<<<< HEAD
+=======
+@media (forced-colors: active) {
+  #header {
+      border-bottom: 1px solid;
+  }
+}
+
+>>>>>>> f4388bb34fac2e70e544336b3e06c7cf2a5af183
 #branding {
     display: flex;
 }

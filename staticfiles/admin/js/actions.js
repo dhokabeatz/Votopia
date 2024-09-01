@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /*global gettext, interpolate, ngettext*/
+=======
+/*global gettext, interpolate, ngettext, Actions*/
+>>>>>>> f4388bb34fac2e70e544336b3e06c7cf2a5af183
 'use strict';
 {
     function show(selector) {
