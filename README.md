@@ -47,4 +47,36 @@ python manage.py runserver
 ```
 
 ## Usage
-Once the 
+
+Once the application is running on localhost, you can:
+
+* Register as a voter
+
+* Create an election using the superuser credentials
+
+* Vote securely from any location
+
+* View real-time results after the election concludes
+
+
+
+## Contributing
+
+You are welcomed with your contribution to Votopia. If you have any suggestions for improvement or new features, please follow these steps:
+
+1. Fork the repository
+
+2. Create a new branch (git checkout -b your-branch-name).
+
+3. Make changes
+
+4. Commit your changes
+
+5. Push to the branch (git push origin your-branch-name).
+
+6. Open a pull request
+
+
+## Licensing
+
+This project is licensed under the MIT License. See [LICENSE] file for more details.
