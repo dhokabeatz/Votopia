@@ -6,4 +6,3 @@ __pycache__/
 media/
 staticfiles/
 .env
-*.txt
