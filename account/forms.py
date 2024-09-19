@@ -5,14 +5,12 @@ from .models import *
 class FormSettings(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super(FormSettings, self).__init__(*args, **kwargs)
-        # Here make some changes such as:
         for field in self.visible_fields():
             field.field.widget.attrs['class'] = 'form-control'
 
 
 class CustomUserForm(FormSettings):
     email = forms.EmailField(required=True)
-    # email = forms.EmailField(required=True)
     password = forms.CharField(widget=forms.PasswordInput)
 
     widget = {
@@ -51,7 +49,6 @@ class CustomUserForm(FormSettings):
         password = self.cleaned_data.get("password", None)
         if self.instance.pk is not None:
             if not password:
-                # return None
                 return self.instance.password
 
         return make_password(password)
