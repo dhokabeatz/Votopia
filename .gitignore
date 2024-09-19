@@ -6,4 +6,4 @@ __pycache__/
 media/
 staticfiles/
 .env
-project_structure.txt
+*.txt
