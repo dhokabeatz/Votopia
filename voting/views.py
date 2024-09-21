@@ -248,7 +248,7 @@ def preview_vote(request):
     else:
         output = ""
         form = dict(request.POST)
-        # We don't need to loop over CSRF token
+        # No need to loop over CSRF token
         form.pop('csrfmiddlewaretoken', None)
         error = False
         data = []

@@ -2,10 +2,10 @@
 {% load static %}
 
 {% block content %}
-<div class="bg-image" style="background-image: url('https://images.pexels.com/photos/7103110/pexels-photo-7103110.jpeg?auto=compress&cs=tinysrgb&w=600'); height: 100vh; background-repeat: no-repeat; background-size: cover; background-position: center; border-radius: 4px;">
+<div class="bg-image" style="background-image: url('{% static 'images/bg_local.jpg' %}'); height: 100vh; background-repeat: no-repeat; background-size: cover; background-position: center; border-radius: 4px;">
     <nav class="navbar navbar-dark bg-dark shadow-sm"></nav>
     <div class="login-box" style="border-radius: 8px;">
-        <div class="login-logo" style="font-weight: bolder;">
+        <div class="login-logo" style="font-weight: bolder; color: white;">
             Welcome to Votopia
         </div>
 
