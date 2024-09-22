@@ -20,6 +20,8 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'whitenoise.runserver_nostatic',
+
     'django.contrib.staticfiles',
     'account',
     'manager',
@@ -28,6 +30,8 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -56,6 +60,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'votopia.wsgi.application'
 
+
 # Database Configuration using DATABASE_URL
 DATABASES = {
     'default': dj_database_url.parse(config('DATABASE_URL'))
@@ -80,3 +85,11 @@ ELECTION_TITLE_PATH = os.path.join(BASE_DIR, config('ELECTION_TITLE_PATH'))
 SEND_OTP = False
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+STORAGES = {
+    # ...
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+    },
+}
