@@ -81,4 +81,4 @@ You are welcomed with your contribution to Votopia. If you have any suggestions 
 
 ## Licensing
 
-This project is licensed under the MIT License. See [LICENSE]() file for more details.
+This project is licensed under the MIT License. See [LICENSE](LICENSE) file for more details.
