@@ -56,20 +56,11 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'votopia.wsgi.application'
 
-# Database Configuration using .env
+# Database Configuration using DATABASE_URL
 DATABASES = {
-    'default': {
-        'ENGINE': config('DB_ENGINE'),
-        'NAME': BASE_DIR / config('DB_NAME'),
-    }
+    'default': dj_database_url.parse(config('DATABASE_URL'))
 }
 
-DATABASES["default"] = dj_database_url.parse(
-    config('DATABASE_URL')
-)
-
-
-DATABASES["default"] = dj_database_url.parse("postgresql://votopia_db_user:LveatabVWk0Fxz4BhfTqZfb76aqGULf2@dpg-crnlbso8fa8c738i3r10-a.oregon-postgres.render.com/votopia_db")
 # Other settings...
 
 STATIC_URL = '/static/'
