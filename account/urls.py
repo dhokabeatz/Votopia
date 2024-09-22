@@ -7,3 +7,8 @@ urlpatterns = [
     path('register/', views.account_register, name="account_register"),
     path('logout/', views.account_logout, name="account_logout"),
 ]
+
+from django.conf import settings
+from django.conf.urls.static import static
+
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
