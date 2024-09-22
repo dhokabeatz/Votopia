@@ -9,10 +9,10 @@ Welcome to Votopia, a revolutionary eVoting platform designed to streamline the 
 In today's digital age, traditional voting methods can be cumbersome and time-consuming. Votopia aims to modernize this experience by providing a user-friendly web application that facilitates seamless voting for various student positions, from class representatives to student council members. Our platform not only simplifies the voting process but also ensures that it is accessible to all students, regardless of their location.
 
 ### Author
-- [Henry Agyemang](#)
+- [Henry Agyemang](amglna2020@gmail.com)
 
 ## Deployed Site
-You can access the live application here: [Votopia](#)
+You can access the live application here: [Votopia](https://votopia-portfolio-app.onrender.com)
 
 ## Installation
 
@@ -38,6 +38,7 @@ python manage.py makemigrations
 python manage.py migrate
 
 5. Create a superuser:
+
 python manage.py createsuper user
 
 (follow the prompt to create one)
