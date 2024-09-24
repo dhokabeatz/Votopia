@@ -82,7 +82,6 @@ AUTHENTICATION_BACKEND = ['account.email_backend.EmailBackend']
 # Load Election Title Path from .env
 ELECTION_TITLE_PATH = os.path.join(BASE_DIR, config('ELECTION_TITLE_PATH'))
 
-SEND_OTP = False
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 

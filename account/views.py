@@ -1,12 +1,10 @@
 from django.shortcuts import render
-
 from django.shortcuts import render, redirect, reverse
 from .email_backend import EmailBackend
 from django.contrib import messages
 from .forms import CustomUserForm
 from voting.forms import VoterForm
 from django.contrib.auth import login, logout
-# Create your views here.
 
 
 def account_login(request):

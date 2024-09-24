@@ -1,5 +1,4 @@
 from django.shortcuts import render
-
 from django.shortcuts import render, reverse, redirect
 from voting.models import Voter, Position, Candidate, Votes
 from account.models import CustomUser
@@ -8,14 +7,11 @@ from voting.forms import *
 from django.contrib import messages
 from django.http import JsonResponse, HttpResponse
 from django.conf import settings
-import json  # Not used
+import json
 from django_renderpdf.views import PDFView
 
 
 def find_n_winners(data, n):
-    """Read More
-    https://www.geeksforgeeks.org/python-program-to-find-n-largest-elements-from-a-list/
-    """
     final_list = []
     candidate_data = data[:]
     # print("Candidate = ", str(candidate_data))
